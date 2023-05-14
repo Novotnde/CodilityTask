@@ -15,7 +15,6 @@ public class PermMissingElement
         {
             return 2;
         }
-        var dictionary = new Dictionary<int, int>();
         Array.Sort(A);
         var counter = 1;
         for (int i = 0; i < A.Length; i++)
@@ -24,12 +23,6 @@ public class PermMissingElement
             if (counter == num)
             {
                 counter++;
-                dictionary.Add(num,1);
-            }
-            else
-            {
-                dictionary.Add(counter,0);
-                break;
             }
         }
         return counter;

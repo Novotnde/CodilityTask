@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "z0RBEq6VQizpq3vzO1On4OFvNNvnGtiuA5vEvTWhKIfmjd2DMu9yQtChHErGaL+yuXrRS9UhtHcpfPDAzwlKTg==",
+  "success": true,
+  "projectFilePath": "/Users/denisanovotna/Documents/GitHub/CodilityTask/CodilityTasks/CodilityTasks.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://nuget.uxdivers.com/grial'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    }
+  ]
+}

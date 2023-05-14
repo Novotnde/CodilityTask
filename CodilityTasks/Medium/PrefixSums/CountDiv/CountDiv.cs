@@ -6,10 +6,15 @@ public class CountDiv
 
     public int solution(int A, int B, int K)
     {
-        if (A > 2000000000 || B > 2000000000 || K > 2000000000 || A < 0 || B < 0 || K < 1) {
+        if (A > 2000000000 || 
+            B > 2000000000 ||
+            K > 2000000000 || 
+            A < 0 
+            || B < 0 
+            || K < 1) 
+        {
             return -1;
         }
-        
         
         int start = A % K == 0 ? A : A + (K - (A % K));
         int end = B - (B % K);
@@ -17,19 +22,6 @@ public class CountDiv
         if (start > B) {
             return 0;
         }
-    
         return (end - start) / K + 1;
-
-        /*var counter = 0;
-        for (var i = A; i <= B; i++)
-        {
-            var num = i;
-            if (num % K == 0)
-            {
-                counter++;
-            }
-        }
-        
-        return counter;*/
     }
 }

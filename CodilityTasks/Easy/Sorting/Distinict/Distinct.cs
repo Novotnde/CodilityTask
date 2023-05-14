@@ -28,6 +28,8 @@ public class Distinct
 
         return unique;
     }
+    
+    
     // 100 correct 33 perf
 
     public int solutionTheSameSlow(int[] A)

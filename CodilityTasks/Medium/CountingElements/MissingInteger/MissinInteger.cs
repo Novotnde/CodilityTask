@@ -3,22 +3,17 @@ namespace CodilityTasks.Medium.CountingElements.MissingInteger;
 public class MissinInteger
 {
     // Find the smallest positive integer that does not occur in a given sequence. 
-    // 60 correct a 50 perf.. 
+    // 100
     public int solution(int[] A)
     {
-        Array.Sort(A);
-        var counter = 1;
         var uniqueNumbers = new HashSet<int>();
-        foreach (var num in A)
-        {
-            if (Math.Sign(num) != 1)
-            {
-                return 1;
+        foreach (var num in A) {
+            if (num > 0) {
+                uniqueNumbers.Add(num);
             }
-            uniqueNumbers.Add(num);
         }
-        while (uniqueNumbers.Contains(counter))
-        {
+        var counter = 1;
+        while (uniqueNumbers.Contains(counter)) {
             counter++;
         }
         return counter;
