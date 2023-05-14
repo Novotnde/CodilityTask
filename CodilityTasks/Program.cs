@@ -1,5 +1,6 @@
 ﻿using CodilityTasks.Easy.Arrays;
 using CodilityTasks.Easy.BinaryGap;
+using CodilityTasks.Easy.Leader.Dominator;
 using CodilityTasks.Easy.PrefixSum;
 using CodilityTasks.Easy.Sorting.Distinict;
 using CodilityTasks.Easy.Sorting.MaxProductOfThree;
@@ -69,11 +70,15 @@ namespace CodilityTasks
          //var brackets = new Brackets();
         // var result = brackets.solution("{[()()]}");
 
-         var fish = new Fish();
-         var A = new int[] { 4,3,2,1,5 };
-         var B = new int[] { 0,1,0,0,0 };
+        // var fish = new Fish();
+        // var A = new int[] { 4,3,2,1,5 };
+        // var B = new int[] { 0,1,0,0,0 };
+        //var result = fish.solution(A,B);
+         
+         var dominator = new Dominator();
+         var A = new int[] { 3,3,3,3,5,6,7,1 };
 
-         var result = fish.solution(A,B);
+         var result = dominator.solution(A);
          Console.WriteLine(result);
         }
     }
