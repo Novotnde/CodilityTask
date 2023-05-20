@@ -3,7 +3,6 @@ namespace CodilityTasks.Easy.Sorting.Distinict;
 public class Distinct
 {
     // 100 correct 33 perf
-
     public int solution(int[] A)
     {
         var distinct = new Dictionary<int, int>();
